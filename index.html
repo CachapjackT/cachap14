@@ -1,0 +1,109 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      color: white;
+      background: url('https://img.freepik.com/premium-photo/abstract-yin-yang-symbol_752237-13653.jpg?w=2000') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding: 50px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .header h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .header p {
+      font-size: 18px;
+      color: #ddd;
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="header">
+      <h1>Jack Tomilas Cachap</h1>
+      <p>College Student | ML Player | Rider</p>
+    </div>
+
+    <div class="portfolio">
+      <!-- Sports Card -->
+      <a href="sports.html">
+        <div class="card">
+          <h3>Sports</h3>
+          <p>Sports have always been more than just a game to me, they're a way to grow through discipline, passion, and persistence.</p>
+          <p>Click here</p>
+        </div>
+      </a>
+
+      <!-- Hobbies Card (LINKED TO hobbies.html) -->
+      <a href="hobbies.html">
+        <div class="card">
+          <h3>Hobbies</h3>
+          <p>From the thrill of motorbiking to the strategy of Mobile Legends, these hobbies let me relax and express myself outside school life.</p>
+          <p>Click here</p>
+        </div> <!-- Sports Card -->
+      </a>
+
+     
+    </div>
+  </div>
+</body>
+</html>

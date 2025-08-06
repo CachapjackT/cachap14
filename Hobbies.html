@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hobbies - Jack Tomilas Cachap</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      color: white;
+      background: url('https://img.freepik.com/premium-photo/night-dark-grunge-background-with-light_120819-269.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding: 50px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .header h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .header p {
+      font-size: 18px;
+      color: #ccc;
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background-size: cover;
+      background-position: center;
+      border-radius: 15px;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+      border-radius: 15px;
+    }
+
+    .card-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #eee;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 32px;
+      }
+    }
+
+    /* Ensure the image inserted doesn't overflow and is fully visible */
+    .card img {
+      width: 80%;
+      height: 10%;
+      object-fit: cover;
+      border-radius: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="header">
+      <h1>My Hobbies</h1>
+      <p>Where I find thrill and fun outside school and training.</p>
+    </div>
+
+    <div class="portfolio">
+      <!-- Motorcycle Card -->
+      <div class="card" style="background-image: url('https://motorbike.gr/wp-content/uploads/2019/04/0004.Honda-Supra-GTR-150-1024x683.jpg');">
+        <div class="card-content">
+          <h3>Motorcycle Riding</h3>
+          <p>Riding my Honda Supra GTR 150 helps me unwind and enjoy the open road. It's more than a hobby, it's freedom.</p>
+        </div>
+      </div>
+
+      <!-- Inserted Image wrapped inside a card (fixing overflow and visibility) -->
+      <div class="card">
+        <img src="IMG20250423154400.jpg" alt="Motorcycle Image">
+        <div class="card-content">
+          <h3>My Bike</h3>
+          <p>Here's a picture of my bike, which I take on thrilling rides every weekend.</p>
+        </div>
+      </div>
+
+      <!-- Mobile Legends Card -->
+      <div class="card" style="background-image: url('https://a-static.besthdwallpaper.com/zilong-mobile-legends-ml-wallpaper-3554x1999-67682_53.jpg');">
+        <div class="card-content">
+          <h3>Mobile Legends</h3>
+          <p>Mobile Legends has always been a way for me to unwind and enjoy a competitive challenge, but what makes it even more special is how it brings
+ me closer to my friends. I've got friends I haven't seen in ages, and the game gives us the perfect excuse to reconnect. Whether we’re teaming up for 
+ranked matches or just playing casually, it's like picking up where we left off, laughing at old inside jokes, and strategizing together as if no time has passed.
+ It's more than just a game, it's a way to stay connected, even when life gets busy, and I love how it makes our friendship stronger, even from a distance.</p>
+        </div>
+      </div>
+
+      <!-- Back to Main Page Card -->
+      <a href="index.html">
+        <div class="card" style="background-color: #444;">
+          <div class="card-content">
+            <h3>? Back to Main</h3>
+            <p>Return to my personal portfolio homepage.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
